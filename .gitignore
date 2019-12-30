@@ -1,0 +1,16 @@
+README.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!eatgo-api/src/main/**
+!eatgo-api/src/test/**
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### macOS ###
+.DS_Store
