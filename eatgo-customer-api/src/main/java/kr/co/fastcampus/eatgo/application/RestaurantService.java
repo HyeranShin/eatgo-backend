@@ -40,17 +40,4 @@ public class RestaurantService {
 
         return restaurant;
     }
-
-    public Restaurant addRestaurant(Restaurant restaurant) {
-        return restaurantRepository.save(restaurant);
-    }
-
-    @Transactional
-    public Restaurant updateRestaurant(long id, String name, String address) {
-        Restaurant restaurant = restaurantRepository.findById(id).orElse(null);
-
-        restaurant.updateInformation(name, address);
-
-        return restaurant;
-    }
 }
