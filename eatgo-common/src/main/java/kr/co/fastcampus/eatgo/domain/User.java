@@ -34,4 +34,12 @@ public class User {
     public boolean isAdmin() {
         return level >= 100;
     }
+
+    public boolean isActive() {
+        return level > 0;
+    }
+
+    public void deactivate() {
+        level = 0L;
+    }
 }
