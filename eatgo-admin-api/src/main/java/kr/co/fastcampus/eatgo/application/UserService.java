@@ -25,4 +25,13 @@ public class UserService {
 
         return users;
     }
+
+    public User addUser(String email, String name) {
+        User user = User.builder()
+                .email(email)
+                .name(name)
+                .build();
+
+        return userRepository.save(user);
+    }
 }
