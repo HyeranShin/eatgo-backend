@@ -3,7 +3,7 @@ spring:
     url: jdbc:h2:~/data/eatgo
   jpa:
     hibernate:
-      ddl-auto:
+      ddl-auto: update
 
 ---
 
