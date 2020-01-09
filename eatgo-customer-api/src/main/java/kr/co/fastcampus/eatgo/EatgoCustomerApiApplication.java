@@ -9,5 +9,4 @@ public class EatgoCustomerApiApplication {
     public static void main(String[] args) {
         SpringApplication.run(EatgoCustomerApiApplication.class, args);
     }
-
 }
