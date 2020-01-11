@@ -1,7 +1,5 @@
 package kr.co.fastcampus.eatgo.application;
 
-import kr.co.fastcampus.eatgo.application.ReviewService;
-import kr.co.fastcampus.eatgo.domain.Review;
 import kr.co.fastcampus.eatgo.domain.ReviewRepository;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,14 +25,7 @@ public class ReviewServiceTest {
 
     @Test
     public void addReview() {
-
-        Review review = Review.builder()
-                .name("JOKER")
-                .score(3)
-                .description("맛있다.")
-                .build();
-
-        reviewService.addReview(1004L, review);
+        reviewService.addReview(1004L, "JOKER", 3, "맛있다.");
 
         verify(reviewRepository).save(any());
     }
