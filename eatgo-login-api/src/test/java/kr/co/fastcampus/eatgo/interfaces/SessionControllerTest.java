@@ -46,7 +46,7 @@ public class SessionControllerTest {
         User mockUser = User.builder()
                 .name(name)
                 .id(id)
-                .password("ACCESSTOKEN")
+                .password("test")
                 .build();
 
         given(userService.authenticate(email, password)).willReturn(mockUser);
